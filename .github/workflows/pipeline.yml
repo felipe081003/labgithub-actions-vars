@@ -1,5 +1,3 @@
-  - name: "Passo 3: Auditoria com Variaveis Padrao"
-        run: |
-          # TODO: Complete esta secao usando variaveis de ambiente padrao do GitHub Actions
-          # Exemplo: echo "Repositorio: $GITHUB_REPOSITORY"
-          echo "O usuario [felipe081003] disparou este workflow no repositorio [labgithub-actions-vars]. O sistema operacional do runner e [SISTEMA_OPERACIONAL]."
+- name: "Passo 3: Auditoria com Variaveis Padrao"
+  run: |
+    echo "O usuario $GITHUB_ACTOR disparou este workflow no repositorio $GITHUB_REPOSITORY. O sistema operacional do runner e $RUNNER_OS."
