@@ -12,3 +12,4 @@ jobs:
       - name: "Passo 3: Auditoria com Variaveis Padrao"
         run: |
           echo "O usuário $GITHUB_ACTOR disparou este workflow no repositório $GITHUB_REPOSITORY. O sistema operacional do runner é $RUNNER_OS."
+# força update
