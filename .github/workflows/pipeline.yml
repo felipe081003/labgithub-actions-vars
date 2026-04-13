@@ -1,14 +1,9 @@
-name: Meu Workflow de Auditoria
-
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch: # Permite rodar manualmente
-
 jobs:
-  auditoria:
+  build_app:        # O nome do Job solicitado
     runs-on: ubuntu-latest
     steps:
+      # ... outros passos que você já tenha (como checkout) ...
+
       - name: "Passo 3: Auditoria com Variaveis Padrao"
         run: |
-          echo "O usuario $GITHUB_ACTOR disparou este workflow no repositorio $GITHUB_REPOSITORY. O sistema operacional do runner e $RUNNER_OS."
+          echo "O usuário $GITHUB_ACTOR disparou este workflow no repositório $GITHUB_REPOSITORY. O sistema operacional do runner é $RUNNER_OS."
