@@ -1,3 +1,14 @@
-- name: "Passo 3: Auditoria com Variaveis Padrao"
-  run: |
-    echo "O usuario $GITHUB_ACTOR disparou este workflow no repositorio $GITHUB_REPOSITORY. O sistema operacional do runner e $RUNNER_OS."
+name: Meu Workflow de Auditoria
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: # Permite rodar manualmente
+
+jobs:
+  auditoria:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Passo 3: Auditoria com Variaveis Padrao"
+        run: |
+          echo "O usuario $GITHUB_ACTOR disparou este workflow no repositorio $GITHUB_REPOSITORY. O sistema operacional do runner e $RUNNER_OS."
