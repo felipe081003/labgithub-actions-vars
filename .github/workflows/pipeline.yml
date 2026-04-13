@@ -2,4 +2,4 @@
         run: |
           # TODO: Complete esta secao usando variaveis de ambiente padrao do GitHub Actions
           # Exemplo: echo "Repositorio: $GITHUB_REPOSITORY"
-          echo "O usuario [NOME_DO_USUARIO] disparou este workflow no repositorio [NOME_DO_REPO]. O sistema operacional do runner e [SISTEMA_OPERACIONAL]."
+          echo "O usuario [felipe081003] disparou este workflow no repositorio [labgithub-actions-vars]. O sistema operacional do runner e [SISTEMA_OPERACIONAL]."
